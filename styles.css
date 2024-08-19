@@ -1,0 +1,22 @@
+@charset "utf-8";
+
+/*
+    About You in Review
+    Ozarks Technical Community College
+    CIS-131-W01 24FA
+    Markley
+    Author: William Meyers
+    Date:  August 26, 2024
+    FileName:  styles.css
+    
+    colors
+    --primary  c08552
+    --dark  5e3023
+    --light  f3e9dc
+*/
+
+:root {
+    --primary: #c08552;
+    --dark: #5e3023;
+    --light: #f3e9dc;
+}

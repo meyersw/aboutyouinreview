@@ -13,20 +13,108 @@
     --primary  c08552
     --dark  5e3023
     --light  f3e9dc
+    --highlight 
 */
 
-/* :root {
+:root {
     --primary: #c08552;
     --dark: #5e3023;
     --light: #f3e9dc;
+    --highlight: #470b0b;
 }
 
-/* navigation styles */
-
-/* .container-navbar {
-    background-color: var(--dark);
+body {
+    color: var(--dark);
+    background-color: var(--light);
+    padding: 5%;
 }
 
-.nav-link, .navbar-brand, .navbar-toggler,.navbar-toggler-icon{
+
+em {
+    color: var(--highlight);
+}
+
+a {
+    color: var(--dark);
+}
+
+a:visited {
+    color: var(--dark);
+}
+
+a:hover {
     color: var(--light);
-}  */
+}
+
+nav{
+    font-size: 2em;
+    display: block;
+}
+
+nav>ul{
+    display: block;
+    width: 100%;
+text-align: center;
+}
+
+li{
+    display: inline-block;
+    margin: 1em;
+    border: solid;
+    padding: .5em;
+}
+
+li:hover {background-color: var(--highlight)}
+
+img {
+    width: 99%;
+}
+
+.caption{
+    font-size: 2em;
+    text-align: center;
+}
+
+.aboutme {
+    display: block;
+    width: 40%;
+    float: left;
+    font-size: 1.5em;
+    border: solid;
+    padding: 5px;
+}
+
+.photos {
+    display: block;
+    width: 40%;
+    float: right;
+    border: solid;
+    padding: 5px;
+}
+
+footer {
+    clear: both;
+    text-align: center;
+    font-size: 3em;
+}
+
+.name {
+    font-size: 3em;
+    text-align: center;
+}
+
+textarea {
+    width: 600px;
+    height: 150px;
+}
+
+div#buttons {
+    text-align: center;
+    width: 100%;
+    font-size: 2em;
+}
+
+input:invalid {
+    background-color: yellow;
+    color: red;
+}

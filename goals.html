@@ -11,34 +11,64 @@
     FileName:  goals.html -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Goals--About You in Review</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <title>Goals--You in Review</title>
     <link href="styles.css" rel="stylesheet">
 </head>
 
 <body>
-    <div class="container">
-        <nav class="navbar navbar-expand-lg bg-body-tertiary">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="index.html">William Meyers</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
-                    aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                    <div class="navbar-nav">
-                        <a class="nav-link" href="index.html">About Me</a>
-                        <a class="nav-link" href="forfun.html">For Fun</a>
-                        <a class="nav-link" href="goals.html">Goals</a>
-                    </div>
-                </div>
-            </div>
+    <header>
+        <h1 class="name">William Meyers</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="goals.html">Goals</a></li>
+                <li><a href="forfun.html">For Fun</a></li>
+            </ul>
         </nav>
-    </div>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-        crossorigin="anonymous"></script>
+    </header>
+
+    <article class="goals">
+        <h2>Goals</h2>
+        <p>
+            My biggest goal in this course is to just have some fun. Some of us want the fame and glory of being a
+            premier web developer. That's not for me. I just want to expand some skills and see what neat things I can
+            do.
+        </p>
+    </article>
+        <form id="goalssurvey">
+
+
+            <fieldset id="contact">
+
+                <legend>Tell me about your goals.</legend>
+
+                <label for="firstName">First Name</label>
+                <input name="firstName" id="firstName" type="text" placeholder="first name" required>
+
+                <label for="lastName">Last Name</label>
+                <input name="lastName" id="lastName" type="text" placeholder="last name" required>
+
+                <label for="mail">E-mail</label>
+                <input name="Email" id="mail" type="email" placeholder="you@otc.edu" required>
+
+                <label for="personalorprofessional">Personal or Professional Goals</label>
+                <select name="personalorprofessional" id="personalorprofessional">
+                    <option value="Personal">Personal</option>
+                    <option value="Professional">Professional</option>
+                    <option value="Both">Both</option>
+                </select>
+
+                <textarea name="goalstext" id="goalstext" placeholder="What are your goals?" ></textarea>
+
+            </fieldset>
+
+            <div id="buttons">
+                <input type="submit" value="Submit My Request">
+                <input type="reset" value="Cancel">
+            </div>
+        </form>
+
+        <footer>William Meyers 2024&copy;</footer>
+</body>
 
 </html>
